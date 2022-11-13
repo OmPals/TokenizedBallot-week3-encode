@@ -70,6 +70,8 @@ yarn hardhat compile
     ```
     yarn hardhat run scripts\WinningProposalQuery.ts --network goerli
     ```
+    
+Link to the document where all the above transactions were reported: [ETHDenver Week 3 Group Assignment](https://docs.google.com/document/d/1Gq75BMxY8O7lknJnJnwIzmcOeyvELVW67ChrRNdejUg/edit?usp=sharing)
 
 This is how the overall workflow for TokenizedBallot looks like... 
 Many things are hardcoded, which would be made easier to operate in future. A beautiful UI would also be something to consider.
