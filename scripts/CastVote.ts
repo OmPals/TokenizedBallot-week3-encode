@@ -1,3 +1,9 @@
+// Account 1 votes for Proposal-4: FlameBug with 5 MTKs 
+// Account 2 votes for Proposal-5: Shelupinewith 1 MTKs 
+// Account 3 votes for Proposal-1: Dragolite with 3 MTKs 
+// Account 4 votes for Proposal-2: Ashena with 0 MTKs 
+// Account 5 votes for Proposal-3: Toanub with 2 MTKs 
+
 import { BigNumber } from "ethers";
 import { ethers } from "hardhat";
 import { TokenizedBallot__factory } from "../typechain-types";
