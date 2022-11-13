@@ -2,6 +2,7 @@ import { ethers } from "hardhat";
 import { MyToken__factory, TokenizedBallot__factory } from "../typechain-types";
 
 const PROPOSAL_NAMES = ["Dragolite","Ashena","Toanub","Flamebug","Shelupine"];
+const MYTOKEN_ADDRESS="0xb5f175f4e7a83ff282B83Fb139EC99E19Cfe5B6c";
 
 function convertStringArrayToBytes32(array: string[]) {
     const bytes32Array = [];
@@ -15,7 +16,7 @@ async function main() {
     const accounts = await ethers.getSigners(); 
 
     const myTokenFactory = new MyToken__factory(accounts[0]);
-    const myTokenContract = await myTokenFactory.deploy();
+    const myTokenContract = myTokenFactory.attach(MYTOKEN_ADDRESS);
 
     await myTokenContract.deployed();
 
